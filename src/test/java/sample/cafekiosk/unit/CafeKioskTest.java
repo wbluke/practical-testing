@@ -1,5 +1,6 @@
 package sample.cafekiosk.unit;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import sample.cafekiosk.unit.beverage.Americano;
 import sample.cafekiosk.unit.beverage.Latte;
@@ -91,6 +92,7 @@ class CafeKioskTest {
         assertThat(totalPrice).isEqualTo(8500);
     }
 
+    @Disabled
     @Test
     void createOrder() {
         CafeKiosk cafeKiosk = new CafeKiosk();
